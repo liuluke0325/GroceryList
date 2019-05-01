@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -41,7 +42,9 @@ public class Main {
                     String newname = scanner.nextLine();
                     groceryList.modifiedGroceryItem(option-1,newname);
                     break;
-
+                case 5:
+                    System.out.println("Copy the array...");
+                    break;
                 case 0 :
                     flag = false;
                     System.out.println("Closing.....");
@@ -73,6 +76,15 @@ public class Main {
 
     }
 
+
+    public static void cpyArray(){
+
+        ArrayList<String> newArray= new ArrayList<String>(groceryList.getGrocerylist());
+        String [] nextArray = new String[groceryList.getGrocerylist().size()];
+        nextArray = groceryList.getGrocerylist().toArray(nextArray);
+
+
+    }
 
 
 }

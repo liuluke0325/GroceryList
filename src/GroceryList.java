@@ -12,6 +12,11 @@ public class GroceryList {
 
     }
 
+    public ArrayList<String> getGrocerylist() {
+        return grocerylist;
+    }
+
+
     public void printGroceryItem(){
 
         System.out.println("There are " + grocerylist.size() + " in the list");
